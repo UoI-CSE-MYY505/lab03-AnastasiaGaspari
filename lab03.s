@@ -76,7 +76,7 @@ showRowLoop:
     bge  t0, a3, outShowRowLoop
     add  t1, zero, zero # column counter
 showColumnLoop:
-    bge  t1, a2, outShowColumnLoop
+    bne  t1, a2, outShowColumnLoop
     lbu  t2, 0(a0) # get red
     lbu  t3, 1(a0) # get green
     lbu  t4, 2(a0) # get blue
